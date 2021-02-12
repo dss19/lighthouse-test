@@ -18,6 +18,15 @@ form, input, button, textarea {
 	border: none;
 }
 
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+
 button {
 	cursor: pointer;
 }
