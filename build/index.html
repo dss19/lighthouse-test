@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Оформление заказа</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="content">
+          <h1>Оформление заказа</h1>
+          <form class="content-wrap">
+            <div class="form">
+              <div class="form-ttl">Контактные данные</div>
+              <div class="form-contacts">
+                <!-- Контактные данные-->
+                <div class="form-subttl">Получатель</div>
+                <div class="form-group-contacts">
+                  <div class="input">
+                    <input class="field" type="text" name="name" id="form-name" placeholder="Имя*">
+                  </div>
+                  <div class="input">
+                    <input class="field" type="text" name="surname" id="form-surname" placeholder="Фамилия*">
+                  </div>
+                  <div class="input">
+                    <input class="field" type="tel" name="phone" id="form-phone" placeholder="Номер телефона*">
+                  </div>
+                  <div class="input input-with-text">
+                    <input class="field" type="tel" name="phone2" id="form-phone2" placeholder="Телефон, если не дозвонимся">
+                  </div>
+                </div>
+                <!-- Контактные данные END-->
+                <!-- Выбор города-->
+                <div class="form-group-city">
+                  <div class="input">
+                    <select class="field select2" id="form-city" name="city">
+                      <option></option>
+                      <option value="1">Москва </option>
+                      <option value="2">Санкт-Петербург </option>
+                      <option value="3">Екатеринбург </option>
+                      <option value="4">Самара </option>
+                      <option value="5">Саратов </option>
+                      <option value="6">Тамбов </option>
+                      <option value="7">Пенза </option>
+                      <option value="8">Ставрополь </option>
+                      <option value="9">Сочи </option>
+                      <option value="10">Ростов</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Выбор города END-->
+                <!-- Способ получения-->
+                <div class="form-subttl">Способ получения</div>
+                <div class="form-group-delivery">
+                  <div class="input-delivery-choise">
+                    <div class="input-delivery-item">
+                      <input class="input-delivery-checkbox" type="radio" name="delivery" id="self">
+                      <label class="input-delivery-label" for="self">Самовывоз</label>
+                    </div>
+                    <div class="input-delivery-item">
+                      <input class="input-delivery-checkbox" type="radio" name="delivery" id="delivery" checked>
+                      <label class="input-delivery-label" for="delivery">Доставка</label>
+                    </div>
+                  </div>
+                  <!-- Если выбрана доставка-->
+                  <div class="form-group-delivery-wrap active"> 
+                    <div class="form-group-street">
+                      <div class="input">
+                        <input class="field" type="text" name="street" id="form-street" placeholder="Улица*">
+                      </div>
+                    </div>
+                    <div class="form-group-adress">
+                      <div class="input">
+                        <input class="field" type="text" name="house" id="form-house" placeholder="Дом*">
+                      </div>
+                      <div class="input">
+                        <input class="field" type="text" name="building" id="form-building" placeholder="Строение">
+                      </div>
+                      <div class="input">
+                        <input class="field" type="text" name="corps" id="form-corps" placeholder="Корпус">
+                      </div>
+                      <div class="input">
+                        <input class="field" type="text" name="frontdoor" id="form-frontdoor" placeholder="Подъезд">
+                      </div>
+                      <div class="input">
+                        <input class="field" type="text" name="room" id="form-room" placeholder="Квартира">
+                      </div>
+                    </div>
+                    <div class="form-subttl">Доставка</div>
+                    <div class="form-group-price">
+                      <div class="input-price-item"> 
+                        <input class="input-price-checkbox" type="radio" name="price" id="standart" checked>
+                        <label class="input-price-label" for="standart">Стандартная доставка </label>
+                        <div class="input-price-item-value">300<span>₽		</span></div>
+                      </div>
+                      <div class="input-price-item"> 
+                        <input class="input-price-checkbox" type="radio" name="price" id="today">
+                        <label class="input-price-label" for="today">День в день</label>
+                        <div class="input-price-item-value">660<span>₽</span></div>
+                      </div>
+                    </div>
+                    <div class="form-group-date"> 
+                      <div class="input">
+                        <input class="field datepicker-here" type="text" name="date" id="form-date" placeholder="Дата доставки">
+                      </div>
+                    </div>
+                    <div class="form-subttl-small">Время доставки</div>
+                    <div class="form-group-time">
+                      <div class="input-time-item"> 
+                        <input class="input-time-checkbox" type="radio" name="time" id="9to18">
+                        <label class="input-time-label" for="9to18">с 9 до 18 часов </label>
+                      </div>
+                      <div class="input-time-item"> 
+                        <input class="input-time-checkbox" type="radio" name="time" id="10to20" checked>
+                        <label class="input-time-label" for="10to20">с 10 до 20 часов</label>
+                      </div>
+                      <div class="input-time-item"> 
+                        <input class="input-time-checkbox" type="radio" name="time" id="12to16">
+                        <label class="input-time-label" for="12to16">с 12 до 16 часов</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Если выбрана доставка END-->
+                </div>
+                <!-- Способ получения END-->
+                <!-- Оплата-->
+                <div class="form-subttl">Оплата</div>
+                <div class="form-group-payment"> 
+                  <div class="input-payment">
+                    <input class="input-payment-checkbox" type="radio" name="payment" id="cash">
+                    <label class="input-payment-label" for="cash">Наличными</label>
+                  </div>
+                  <div class="input-payment">
+                    <input class="input-payment-checkbox" type="radio" name="payment" id="card" checked>
+                    <label class="input-payment-label" for="card">Банковской картой</label>
+                  </div>
+                </div>
+                <!-- Оплата END-->
+                <!-- SMS и Итого-->
+                <div class="form-group-sms">
+                  <div class="input-sms">
+                    <input class="input-sms-checkbox" type="checkbox" name="sms" id="form-sms" checked>
+                    <label class="input-sms-label" for="form-sms">Прислать SMS с номером заказа на телефон получателя</label>
+                  </div>
+                </div>
+                <div class="form-total-items">3 товара</div>
+                <div class="form-total-price"><span>Итого:</span><span>195300	</span><span>₽	</span></div>
+                <button class="form-submit" type="submit">Оформить заказ</button>
+                <!-- SMS и Итого END-->
+              </div>
+            </div>
+            <!-- Боковое окно		-->
+            <div class="aside"> 
+              <div class="aside-ttl">В заказе</div>
+              <div class="aside-items-value">3 позиции:</div>
+              <div class="aside-item"> 
+                <div class="aside-item-name">Цветное МФУ Ecosys 2035 cdn</div>
+                <div class="aside-item-info">12 500 ₽ - 1 шт</div>
+              </div>
+              <div class="aside-item"> 
+                <div class="aside-item-name">Монохромное МФУ Taskalfa 3212i</div>
+                <div class="aside-item-info">90 000 ₽ - 2 шт	</div>
+              </div>
+              <div class="aside-item aside-item-delivery"> 
+                <div class="aside-item-name aside-item-name-delivery">Стандартная доставка</div>
+                <div class="aside-item-info aside-item-info-delivery">300 ₽</div>
+              </div>
+              <div class="aside-total"> <span>Итого:</span><span>195 300</span><span>₽</span></div>
+            </div>
+            <!-- Боковое окно END		-->
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.5.1.min.js">						</script>
+    <script src="js/datepicker.min.js">						</script>
+    <script src="js/select2.min.js">						</script>
+    <script src="js/jquery.maskedinput.min.js">						</script>
+    <script src="js/jquery.validate.min.js">						</script>
+    <script src="js/main.js">						</script>
+  </body>
+</html>

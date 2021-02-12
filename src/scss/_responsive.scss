@@ -1,0 +1,85 @@
+@media screen and (max-width: 1199px) {
+	.container {
+		max-width: 800px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 710px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		max-width: none;
+		margin: 0;
+		padding: 0 15px;
+	}
+
+	h1 {
+		margin-bottom: 30px;
+	}
+
+	.content {
+		padding: 50px 0;
+	}
+
+	.content-wrap {
+		flex-direction: column-reverse;
+	}
+
+	.aside {
+		position: static;
+		width: 100%;
+		top: auto;
+		margin-bottom: 30px;
+	}
+
+	.aside-item-name {
+		max-width: none;
+	}
+
+	.form-group-contacts,
+	.form-group-city,
+	.form-group-street,
+	.form-group-date,
+	.form-group-adress {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.form-group-time,
+	.form-group-delivery,
+	.form-group-price,
+	.input-delivery-choise {
+		width: 100%;
+	}
+	.form-submit {
+		max-width: none;
+		width: 100%;
+	}
+
+	.form-group-contacts,
+	.form-group-city,
+	.form-group-street,
+	.form-group-price,
+	.form-group-date {
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 0;
+	}
+
+	.form-group-time {
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 0;
+		grid-template-rows: repeat (3, 1fr);
+		grid-row-gap: 10px;
+	}
+
+	.form-group-adress {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+}

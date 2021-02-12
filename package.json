@@ -1,0 +1,24 @@
+{
+	"name": "Институт ГИТИС",
+	"engines": {
+		"node": "12.18.2"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.26.14",
+		"gulp": "^4.0.2",
+		"gulp-livereload": "^4.0.2",
+		"gulp-newer": "^1.4.0",
+		"gulp-postcss": "^9.0.0",
+		"gulp-sass": "^4.1.0",
+		"node-sass": "^5.0.0"
+	},
+	"dependencies": {
+		"browser-sync": "^2.26.14",
+		"del": "^6.0.0",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-changed": "^4.0.2",
+		"gulp-plumber": "^1.2.1",
+		"gulp-pug": "^4.0.1",
+		"gulp-sourcemaps": "^3.0.0"
+	}
+}
